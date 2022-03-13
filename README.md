@@ -21,45 +21,77 @@ Passo 5 - com as apis sendo executadas abra o postman para realizar os teste par
 **rotas da api-cities**
 
 GET - http://localhost:8000/api/city -> retorna todos os registros
+
 GET - http://localhost:8000/api/city/{id} -> retorna um registro especifico
+
 DEL - http://localhost:8000/api/city/{id} -> deleta um registro
+
 POST - http://localhost:8000/api/city -> cadastra um novo registro
+
 PUT - http://localhost:8000/api/city/{id} -> altera um registro
+
 GET - http://localhost:8000/api/search/city?name={nome-da-cidade} -> retorna se uma cidade existe no banco
+
 obs: para fazer cadastro ou alterar um registro os dados tem que ser enviados no formato json.
+
 ex.: 
+
 {
+
   "state_id":"id-do-estado",
+  
   "city":"nome-da-cidade"
+  
 }
 
 
 GET - http://localhost:8000/api/state -> retorna todos os registros
+
 GET - http://localhost:8000/api/state/{id} -> retorna um registro especifico
+
 DEL - http://localhost:8000/api/state/{id} -> deleta um registro
+
 POST - http://localhost:8000/api/state -> cadastra um novo registro
+
 PUT - http://localhost:8000/api/state/{id} -> altera um registro
 
 obs: para fazer cadastro ou alterar um registro os dados tem que ser enviados no formato json.
+
 ex.: 
+
 {
+
   "uf":"sigla-do-estado",
+  
   "name":"nome-do-estado"
+  
 }
+
 
 **rotas da api-person**
 
 GET - http://localhost:9000/api/person -> retorna todos os registros
+
 GET - http://localhost:9000/api/person/{id} -> retorna um registro especifico
+
 DEL - http://localhost:9000/api/person/{id} -> deleta um registro
+
 POST - http://localhost:9000/api/person -> cadastra um novo registro
+
 PUT - http://localhost:9000/api/person/{id} -> altera um registro
 
 obs: para fazer cadastro ou alterar um registro os dados tem que ser enviados no formato json.
+
 ex.: 
+
 {
+
   "name":"nome-da-pessoa",
+  
   "cpf":"cpf-da-pessoa",
+  
   "state":"sigla-do-estado",
+  
   "city":"nome-da-cidade"
+  
 }
