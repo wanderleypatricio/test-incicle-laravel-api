@@ -25,7 +25,7 @@ GET - http://localhost:8000/api/city/{id} -> retorna um registro especifico
 DEL - http://localhost:8000/api/city/{id} -> deleta um registro
 POST - http://localhost:8000/api/city -> cadastra um novo registro
 PUT - http://localhost:8000/api/city/{id} -> altera um registro
-GET - http://localhost:8000/api/search/city -> retorna se uma cidade existe no banco
+GET - http://localhost:8000/api/search/city?name={nome-da-cidade} -> retorna se uma cidade existe no banco
 obs: para fazer cadastro ou alterar um registro os dados tem que ser enviados no formato json.
 ex.: 
 {
